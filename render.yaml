@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: php-firebase-auth
+    env: php
+    buildCommand: composer install
+    startCommand: vendor/bin/heroku-php-apache2 .
